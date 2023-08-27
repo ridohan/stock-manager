@@ -56,7 +56,10 @@ Cronjob exists in order to remove overdue stock reservation :
 > Delay for each iteration of the cronjob (default 30 seconds) :
 > > stock.cleanjobdelay=30000
 
-### Tests
+### Build & Tests
 
 UnitTests with Mock have been created, to launch them simply use maven goal test :
 > ./mvnw test
+
+In order to fully build & test, use maven clean install goals
+> ./mvnw clean install
