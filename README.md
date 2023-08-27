@@ -2,7 +2,9 @@
 
 ## Getting Started
 
-This application is based on Spring, just simply launch like any other spring boot application
+This application is based on Spring, just simply launch like any other spring boot application with maven :
+> ./mvnw spring-boot:run
+
 
 Data is in memory using H2 database, data is wiped on each restart but a convenience class named LoadDatabase loads some dummy data for
 testing purpose.
@@ -54,3 +56,7 @@ Cronjob exists in order to remove overdue stock reservation :
 > Delay for each iteration of the cronjob (default 30 seconds) :
 > > stock.cleanjobdelay=30000
 
+### Tests
+
+UnitTests with Mock have been created, to launch them simply use maven goal test :
+> ./mvnw test
