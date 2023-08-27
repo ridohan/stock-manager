@@ -10,8 +10,16 @@ import java.util.List;
 public interface ProductService
 {
 	/**
-	 *  Retrieve all existing products
+	 * Retrieve all existing products
+	 *
 	 * @return List of {@link com.intergramma.product.Product}
 	 */
 	List<Product> getAllProducts();
+
+	/**
+	 * Retrieve a product by id
+	 *
+	 * @return {@link com.intergramma.product.Product}
+	 */
+	Product getProduct(String productId);
 }
