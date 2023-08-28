@@ -1,5 +1,10 @@
 # Stock Management
 
+## Requirements
+
+* Java 17 LTS
+* Internet connection to get maven dependencies
+
 ## Getting Started
 
 This application is based on Spring, just simply launch like any other spring boot application with maven :
